@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 0 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.logo {
+  color: #f68b1e;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.nav-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 10%;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.hero-text p {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-text button {
+  background-color: #f68b1e;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #ff7300;
+}
+
+.hero-image {
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px 10% 60px;
+}
+
+.how, .kategori {
+  text-align: center;
+  padding: 80px 10% 60px;
+}
+
+.how-items,
+.kategori-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+}
+
+.item img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-center a, .footer-right a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #555;
+}
+
+.social-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.social-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-info span {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-menu {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-text button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .how, .kategori {
+    padding: 60px 20px;
+  }
+
+  .how-items,
+  .kategori-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .item {
+    width: 100px;
+  }
+
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-center a, .footer-right a {
+    margin: 5px 0;
+  }
+}
+
+/* Başta hamburger gizli */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+  z-index: 3;
+}
+
+/* Menü aktif olduğunda görünür */
+.nav-menu.active {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  gap: 20px;
+  align-items: center;
+}
+
+/* MEDYA SORGUSU: Mobilde hamburger göster, menüyü gizle */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

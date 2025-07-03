@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Takas Go</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+  function toggleMenu() {
+    const navMenu = document.querySelector(".nav-menu");
+    navMenu.classList.toggle("active");
+  }
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo">Takas Go</div>
+    <div class="hamburger" onclick="toggleMenu()">
+  &#9776;
+</div>
+    <div class="nav-menu">
+    <nav>
+      <a href="#">Hakkımızda</a>
+      <a href="#">Kategoriler</a>
+      <a href="#">Nasıl Çalışır?</a>
+      <a href="#">Giriş / Üye Ol</a>
+    </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Her Şey Takaslanabilir!</h1>
+      <p>Eşyadan hizmete, yetenekten zamana...
+      yepyeni bir takas dünyasına hoş geldin!</p>
+      <button>Hemen Keşfet</button>
+    </div>
+    <div class="hero-image">
+      <img src="gorsel.png" alt="Takas Görseli">
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>Nasıl Çalışır?</h2>
+    <div class="how-items">
+      <div class="item">
+        <img src="icons/uye-ol.png" alt="">
+        <p>Üye Ol</p>
+      </div>
+      <div class="item">
+        <img src="icons/ilan.png" alt="">
+        <p>Takas İlanı Paylaş</p>
+      </div>
+      <div class="item">
+        <img src="icons/anlas.png" alt="">
+        <p>Anlaş ve Takasnı Tamamla</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="kategori">
+    <h2>Popüler Kategoriler</h2>
+    <div class="kategori-items">
+      <div class="item">
+        <img src="icons/elektronik.png" alt="">
+        <p>Elektronik</p>
+      </div>
+      <div class="item">
+        <img src="icons/kiyafet.png" alt="">
+        <p>Kıyafet</p>
+      </div>
+      <div class="item">
+        <img src="icons/kitap.png" alt="">
+        <p>Kitap</p>
+      </div>
+      <div class="item">
+        <img src="icons/hizmet.png" alt="">
+        <p>Hizmet</p>
+      </div>
+      <div class="item">
+        <img src="icons/elsanat.png" alt="">
+        <p>El Sanatları</p>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="icons/instagram.png" alt="Instagram" width="24" height="24" />
+      <span>@krm.ertass</span>
+      <p>© 2025 Takas Go</p>
+    </div>
+    <div class="footer-center">
+      <a href="#">Gizlilik</a>
+      <a href="#">Kullanım Şartları</a>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:info@takasgo.com">info@takasgo.com</a>
+    </div>
+  </div>
+</footer>
